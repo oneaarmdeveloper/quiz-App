@@ -18,7 +18,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     // Calculate the score
     foreach ($correct_answers as $index => $correct) {
-        if (isset($user_answers[$index]) && $user_answers[$index] == $correct) { // Fixed isset syntax and index
+        if (isset($user_answers[$index]) && $user_answers[$index] == $correct) { 
             $score++;
         }
     }
@@ -42,7 +42,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <form method="POST">
         <?php foreach ($questions as $question => $options): ?>
             <p><strong><?php echo $question; ?></strong></p>
-            <?php foreach ($options as $key => $option): ?> <!-- Fixed $option to $options -->
+            <?php foreach ($options as $key => $option): ?> 
                 <label>
                     <input type="radio" 
                            name="answers[<?php echo array_search($question, array_keys($questions)); ?>]" 
