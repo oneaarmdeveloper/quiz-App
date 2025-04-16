@@ -38,7 +38,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     <title>Quiz</title>
 </head>
 <body>
-    <h2>PHP Quiz</h2> <!-- Fixed typo "PHPP" to "PHP" -->
+    <h2>PHP Quiz</h2> 
     <form method="POST">
         <?php foreach ($questions as $question => $options): ?>
             <p><strong><?php echo $question; ?></strong></p>
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
             <?php endforeach; ?>
         <?php endforeach; ?>
         <br>
-        <input type="submit" value="Submit"> <!-- Fixed "submit" to "Submit" -->
+        <input type="submit" value="Submit"> 
     </form>
 </body>
 </html>
